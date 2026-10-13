@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#541c2a">
+  <title>Nosso pequeno universo ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <span class="topbar-mark">♡</span>
+    <span>um pedacinho da nossa história</span>
+    <button id="musicButton" class="music-button" type="button" aria-pressed="false">♫ Escuta a nossa música</button>
+  </header>
+
+  <main class="scene">
+    <p class="eyebrow">FEITO COM AMOR, SÓ PARA VOCÊ</p>
+    <div class="book-wrap">
+      <div class="book" id="book" aria-label="Álbum romântico">
+        <section class="page cover page-right" data-page="0">
+          <div class="cover-inner">
+            <span class="tiny-star">✦</span>
+            <p class="cover-kicker">NOSSO LIVRO</p>
+            <h1>O nosso<br><em>pequeno</em><br>universo</h1>
+            <div class="cover-heart">♡</div>
+            <p class="cover-names" id="coverNames">Maria Clara & Victor Hugo</p>
+            <p class="cover-date" id="coverDate">desde o dia em que tudo começou</p>
+            <button class="open-book" data-next type="button">abrir nosso livro <span>→</span></button>
+          </div>
+        </section>
+
+        <section class="page page-right" data-page="1" hidden>
+          <div class="paper">
+            <p class="chapter">01 — O COMEÇO</p>
+            <h2>Era você,<br><em>sem eu saber.</em></h2>
+            <p class="body-copy" id="introText">Entre tantos caminhos, olhares e coincidências, a vida encontrou um jeito bonito de aproximar a gente. E, sem perceber, você começou a fazer parte da minha vida de um jeito especial.</p>
+            <div class="scribble">que sorte a minha ♡</div>
+            <div class="page-number">01</div>
+          </div>
+        </section>
+
+        <section class="page page-right" data-page="2" hidden>
+          <div class="paper">
+            <p class="chapter">02 — NOSSOS MOMENTOS</p>
+            <h2>Pequenos instantes,<br><em>grandes memórias.</em></h2>
+            <div class="photo-grid">
+              <figure class="polaroid tilt-left"><img src="fotos/foto1.jpeg" alt="Nossa primeira lembrança" onerror="this.src='';this.classList.add('empty-photo')"><figcaption>nossa primeira foto</figcaption></figure>
+              <figure class="polaroid tilt-right"><img src="fotos/foto2.jpeg" alt="Um momento feliz" onerror="this.src='';this.classList.add('empty-photo')"><figcaption>nossa última foto♡</figcaption></figure>
+            </div>
+            <p class="small-note"></p>
+            <div class="page-number">02</div>
+          </div>
+        </section>
+
+        <section class="page page-right" data-page="3" hidden>
+          <div class="paper">
+            <p class="chapter">03 — NOSSA LINHA DO TEMPO</p>
+            <h2>Até aqui,<br><em>com você.</em></h2>
+            <div class="timeline" id="timeline">
+              <article><span class="timeline-dot"></span><time>O começo</time><p>No dia em que pela primeira vez na vida nós se falamos, naquele corredor da maria algusta.</p></article>
+              <article><span class="timeline-dot"></span><time>Uma memória favorita</time><p>Eu seria hipócrita se falasse de uma memória especial, estar com você em todos esses anos, fizeram um memorial de memórias favoritas na minha vida.</p></article>
+              <article><span class="timeline-dot"></span><time>Hoje</time><p>O hoje e o amanhã sempre será mais lindo com você.</p></article>
+            </div>
+            <div class="page-number">03</div>
+          </div>
+        </section>
+
+        <section class="page page-right" data-page="4" hidden>
+          <div class="paper center-paper">
+            <p class="chapter">04 — O TEMPO COM VOCÊ</p>
+            <h2>Desde que<br><em>tudo começou...</em></h2>
+            <p class="body-copy centered">cada dia ganhou um detalhe a mais para guardar.</p>
+            <div class="counter" id="counter"><div><strong id="days">0</strong><span>dias</span></div><div><strong id="hours">00</strong><span>horas</span></div><div><strong id="minutes">00</strong><span>minutos</span></div><div><strong id="seconds">00</strong><span>segundos</span></div></div>
+            <p class="small-note">Nosso tempo continua sendo escrito…</p>
+            <div class="page-number">04</div>
+          </div>
+        </section>
+
+        <section class="page page-right" data-page="5" hidden>
+          <div class="paper center-paper">
+            <p class="chapter">05 — UM POTE CHEIO DE AMOR</p>
+            <h2>Um motivo de cada vez,<br><em>mil razões para sorrir.</em></h2>
+            <p class="body-copy centered">Toque no potinho para tirar um bilhetinho.</p>
+            <button class="jar-button" id="reasonButton" type="button" aria-label="Retirar um motivo para amar"><span class="jar-lid"></span><span class="jar">♡<i>♡ ♡</i></span><span class="jar-label">motivos<br>para amar</span></button>
+            <p id="reasonText" class="reason-text" aria-live="polite">Seu próximo bilhetinho está aqui…</p>
+            <div class="page-number">05</div>
+          </div>
+        </section>
+
+        <section class="page page-right" data-page="6" hidden>
+          <div class="paper letter-paper">
+            <p class="chapter">06 — UMA CARTINHA</p>
+            <h2>Abra quando<br><em>sentir saudade.</em></h2>
+            <button id="letterButton" class="letter-envelope" type="button" aria-expanded="false"><span class="envelope-heart">♡</span><span>toque para abrir</span></button>
+            <div id="letterContent" class="letter-content" hidden>
+              <p>Meu amor,</p><p>Se eu pudesse guardar todos os momentos bons em um lugar, escolheria um cantinho dentro de mim. É lá que ficam as conversas bobas, os sorrisos inesperados e todas as pequenas coisas que fazem você ser tão especial para mim.</p><p>Que esta cartinha te lembre que você é amado(a), hoje e em todos os dias que vierem.</p><p class="signature">com todo o meu carinho, ♡</p>
+            </div>
+            <div class="page-number">06</div>
+          </div>
+        </section>
+
+        <section class="page page-right" data-page="7" hidden>
+          <div class="paper center-paper final-paper">
+            <p class="chapter">07 — SÓ MAIS UMA COISA</p>
+            <div class="final-heart">♥</div>
+            <h2>Minha parte favorita<br><em>é ter você na história.</em></h2>
+            <p class="body-copy centered">E se eu pudesse escolher de novo, gostaria de refazer toda nossa históriamais uma vez.</p>
+            <button id="surpriseButton" class="surprise-button" type="button">abrir minha surpresa ♡</button>
+            <div id="surpriseMessage" class="surprise-message" hidden>Você é uma das partes mais bonitas da minha vida. Obrigado por existir e por fazer parte da minha vida todos os dias. <span>♡</span></div>
+            <p class="end-note">fim deste capítulo · não da nossa história</p>
+            <div class="page-number">07</div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <nav class="book-controls" aria-label="Navegação do álbum">
+      <button id="prevButton" type="button" disabled>← anterior</button>
+      <span id="pageIndicator">capa · 0/7</span>
+      <button id="nextButton" type="button">próxima →</button>
+    </nav>
+    <p class="hint">Dica: você também pode usar as setas do teclado.</p>
+  </main>
+  <audio id="backgroundMusic" src="musica/WhatsApp Audio 2026-10-13 at 18.39.23.mp4" loop preload="none"></audio>
+  <script src="script.js"></script>
+</body>
+</html>

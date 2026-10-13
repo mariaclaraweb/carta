@@ -1,0 +1,23 @@
+ÁLBUM ROMÂNTICO — COMO COMEÇAR
+
+1. Abra a pasta album-romantico no VS Code.
+2. Abra index.html no navegador (ou use a extensão Live Server).
+3. Para personalizar nomes e data, abra script.js e edite o objeto CONFIG no começo do arquivo:
+   - nome1: seu nome
+   - nome2: nome da pessoa
+   - inicio: data de início no formato AAAA-MM-DDTHH:mm:ss
+   - motivos: lista de frases do pote
+4. Para trocar as fotos, coloque suas imagens na pasta fotos e nomeie-as foto1.jpg e foto2.jpg.
+   Se forem PNG, atualize os nomes no index.html para foto1.png e foto2.png.
+5. Para adicionar música, coloque um arquivo MP3 na pasta musica e nomeie-o musica.mp3.
+   Use uma música que você tenha direito de usar ou que possa compartilhar.
+6. Edite os textos diretamente no index.html para deixar a carta e a surpresa com a sua cara.
+
+ARQUIVOS
+- index.html: conteúdo e estrutura do álbum
+- style.css: cores, layout, fontes e efeitos
+- script.js: virar páginas, contador, pote, carta, surpresa e música
+- fotos/: suas fotos
+- musica/: arquivo de áudio
+
+DICA: o contador usa a data configurada em CONFIG.inicio. Confira se ela está correta.
