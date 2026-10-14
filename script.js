@@ -1,8 +1,8 @@
 
  // PERSONALIZE AQUI: troque os textos, nomes e a data do relacionamento.
 const CONFIG = {
-  nome1: 'SEU NOME',
-  nome2: 'NOME DO SEU AMOR',
+  nome1: 'Maria Clara',
+  nome2: 'Victor Hugo',
   inicio: '2023-12-14T00:00:00',
   legendaDaData: 'desde o dia em que tudo começou',
   motivos: [
